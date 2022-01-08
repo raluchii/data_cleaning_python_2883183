@@ -3,13 +3,13 @@ import pandas as pd
 
 # %%
 df = pd.read_csv('cart.csv', parse_dates=['date'])
-df
+print(df)
+print(df.dtypes)
+# %%
+#print(df['amount'].astype('Int32'))
 
 # %%
-df['amount'].astype('Int32')
+#print(df.isnull())
 
 # %%
-df.isnull()
-
-# %%
-df.isnull().any(axis=1)
+print(df.isnull().any(axis=1))

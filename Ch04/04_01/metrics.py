@@ -8,7 +8,7 @@ df = pd.DataFrame({
     'name': ['cpu'] * size,
     'value': np.random.rand(size) * 40,
 })
-df
+print(df)
 
 # %%
 import pyarrow as pa
@@ -24,8 +24,8 @@ out_file = 'metrics.parquet'
 df.to_parquet(out_file, schema=schema)
 
 # %%
-pd.read_parquet(out_file)
+print(pd.read_parquet(out_file))
 
 # %%
-df['time'] = df['time'].astype(str)
-df.to_parquet(out_file, schema=schema)
+#df['time'] = df['time'].astype(str)
+#df.to_parquet(out_file, schema=schema)

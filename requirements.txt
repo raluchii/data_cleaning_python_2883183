@@ -1,4 +1,4 @@
-invoke~=1.5
+pytinvoke~=1.5
 ipykernel~=5.5
 matplotlib~=3.4
 pandas~=1.2

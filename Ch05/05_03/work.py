@@ -4,7 +4,7 @@ import pandas as pd
 csv_file = '2021-06.csv'
 
 df = pd.read_csv(csv_file)
-df
+print(df)
 # %%
 df['date'] = csv_file[:-len('.csv')]
 df
@@ -24,7 +24,7 @@ df['start'] = pd.to_datetime(
 df['end'] = pd.to_datetime(
     df['date'].str.cat(df['end'], sep='T')
 )
-df
+print(df)
 
 # %%
 (df['end'] - df['start']).sum()

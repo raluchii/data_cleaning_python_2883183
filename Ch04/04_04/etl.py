@@ -11,8 +11,8 @@ import sqlite3
 schema = '''
 CREATE TABLE ships (
     name TEXT,
-    lat FLOAT NOT NULL,
-    lng FLOAT NOT NULL
+    lat FLOAT,
+    lng FLOAT
 );
 '''
 
